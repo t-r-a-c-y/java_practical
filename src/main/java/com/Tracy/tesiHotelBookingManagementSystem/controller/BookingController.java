@@ -20,7 +20,7 @@ public class BookingController {
     }
 
     @PostMapping
-    @PreAuthorize("hasRole('CUSTOMER')")
+//    @PreAuthorize("hasRole('CUSTOMER')")
     public ResponseEntity<Booking> createBooking(@RequestBody BookingDTO bookingDTO) {
         return ResponseEntity.ok(bookingService.createBooking(bookingDTO));
     }
